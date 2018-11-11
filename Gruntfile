@@ -1,0 +1,34 @@
+/* jshint node: true */
+module.exports = function(grunt) {
+
+    grunt.initConfig({
+
+        npmPackage: grunt.file.readJSON('package.json'),
+        bowerPackage: grunt.file.readJSON('bower.json'),
+
+        watch: {
+            jsFiles: {
+                expand: true,
+                files: ['src/**/*.js', 'Gruntfile.js'],
+                tasks: ['jshint', 'jscs'],
+                options: {
+                    spawn: false
+                }
+            },
+            testFiles: {
+                expand: true,
+                files: ['test/**/*.js'],
+                tasks: ['jshint', 'jscs'],
+                options: {
+                    spawn: false
+                }
+            }
+        }
+    });
+
+    require('load-grunt-tasks')(grunt);
+
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('build', ['eslint']);
+
+};
