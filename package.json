@@ -8,7 +8,15 @@
   },
   "author": "Joan Roca Pla",
   "license": "MIT",
-  "keywords": ["express", "handler", "input", "validator", "request", "ouput", "node"],
+  "keywords": [
+    "express",
+    "handler",
+    "input",
+    "validator",
+    "request",
+    "ouput",
+    "node"
+  ],
   "main": "src/main.js",
   "scripts": {
     "coverage": "npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -22,7 +30,7 @@
     ]
   },
   "dependencies": {
-    
+    "ez-validator.js": "^1.5.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
