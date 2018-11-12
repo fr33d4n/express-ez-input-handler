@@ -1,6 +1,8 @@
 # Express EZ input handler
 An elegant input handler for express requests/responses to ease the management of input/ouput data
 
+[![Build Status](https://travis-ci.org/fr33d4n/express-ez-input-handler.svg?branch=master)](https://travis-ci.org/fr33d4n/express-ez-input-handler) [![codecov](https://codecov.io/gh/fr33d4n/express-ez-input-handler/branch/master/graph/badge.svg)](https://codecov.io/gh/fr33d4n/express-ez-input-handler)
+
 ## Installation
 ```sh
 npm install express-ez-input-handler --save
